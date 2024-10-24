@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Products Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Products Store</h1>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <img src="produs1.jpg" alt="Produs 1">
+                <h2>Produs Digital 1</h2>
+                <p>Preț: $10</p>
+                <button onclick="addToCart(10)">Adaugă în coș</button>
+            </div>
+
+            <div class="product">
+                <img src="produs2.jpg" alt="Produs 2">
+                <h2>Produs Digital 2</h2>
+                <p>Preț: $20</p>
+                <button onclick="addToCart(20)">Adaugă în coș</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Coșul tău</h2>
+            <p>Total: <span id="cart-total">$0</span></p>
+            <button onclick="checkout()">Plătește</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Digital Products Store. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
